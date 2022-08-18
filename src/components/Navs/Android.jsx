@@ -1,6 +1,9 @@
 import React from "react";
 import { Anchor } from "../Button";
-import { BookOpenIcon, BookmarkIcon, ClipboardListIcon, ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
+import {
+    BookOpenIcon, BookmarkIcon,
+    ClipboardListIcon, ChevronDownIcon,
+    ChevronUpIcon, AnnotationIcon } from "@heroicons/react/solid";
 
 const NavAndroid = (props) => {
     return (
@@ -18,9 +21,17 @@ const NavAndroid = (props) => {
                     }
                 </button>
             </div>
-            <div className={`flex-1 h-max`}>
+            <div className={`flex-1 h-max w-full bg-stone-100`}>
                 {props.toogle ?
                     <ul className="flex flex-1 flex-row flex-wrap items-center pt-2 pb-5">
+                        <li className="flex-none m-0 px-5 py-2 w-max">
+                            <Anchor
+                                to="/"
+                                size="sm"
+                                icon={<AnnotationIcon className="h-5 w-5 mr-2" />}
+                                teks="DOKUMENTASI" bgColor={props.activeLink === 0 ? "green" : "sky"}
+                                onClick={() => { props.setActiveLink(0) }} />
+                        </li>
                         <li className="flex-none m-0 px-5 py-2 w-max">
                             <Anchor
                                 to="/kitab"

@@ -15,7 +15,9 @@ const Button = (props) => {
                 hover:shadow-md flex items-center justify-center
                 ${props?.classProps ?? ""}`
             }
-            onClick={props?.onClick ?? undefined}>
+            type={props?.type??"button"}
+            onClick={props?.onClick ?? undefined}
+        >
             {props?.icon ?? <></>}
             {props?.teks ?? <></>}
         </button>
@@ -35,7 +37,7 @@ const Anchor = (props) => {
                 ${props?.classProps ?? ""}`
             }
             onClick={props?.onClick ?? undefined}
-            to={props.to}
+            to={props?.to??"/"}
         >
                 {props?.icon ?? <></>}
                 {props?.teks ?? <></>}

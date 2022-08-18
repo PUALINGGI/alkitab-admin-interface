@@ -13,7 +13,7 @@ const Home = (props)=>{
                 <h1 className="font-bold text-3xl my-5">
                     Alkitab Bahasa Mamasa
                 </h1>
-                <h3 className="font-semibold text-xl">
+                <h3 className="font-semibold text-xl px-5">
                     Selamat bergabung teman-teman, dalam projek ini.
                     Terima kasih karena telah meluangkan waktu untuk turut membantu dalam proses pengembangan projek ini.
                 </h3>
@@ -25,10 +25,10 @@ const Home = (props)=>{
                         <MenuIcon className="h-5 w-5 mr-5" />
                         Menu
                     </h2>
-                    <p className="text-semibold text-lg mb-3">
+                    <p className="text-semibold text-lg mb-3 sm:px-5">
                         Anda dapat melakukan <b>Menambahkan</b>, dan <b>Mengubah</b> data pada menu yang tersedia diatas.
                     </p>
-                    <ul className="flex w-full flex-col">
+                    <ul className="flex w-full flex-col sm:px-10">
                         <li className="w-full">
                             <h3 className="font-bold text-xl my-1 flex items-center">
                                 <BookOpenIcon className="h-5 w-5 mr-5" />
