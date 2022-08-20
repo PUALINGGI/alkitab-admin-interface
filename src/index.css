@@ -16,3 +16,6 @@ code {
     monospace;
 }
 #root { min-height:100vh !important; }
+.disabled {
+  pointer-events:none;
+}

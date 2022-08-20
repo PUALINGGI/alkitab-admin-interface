@@ -29,3 +29,22 @@ export const postKitab = async (setError, setPesan, namaKitab, refreshList) => {
         await setPesan(err.response.data.error);
     })
 }
+
+export const putKitab = (setError, setPesan, kitab, namaKitab, cb)=>{
+    axios({
+        method: "PUT",
+        url : `https://alkitab-mamasa.herokuapp.com/kitab/${kitab}`,
+        data: { nama: namaKitab },
+        auth: {
+            username: 'pualinggi',
+            password: 'pualinggi'
+        },
+    }).then(async (response)=>{
+        await setError(false);
+        await setPesan(response.data.sukses);
+        await cb();
+    }).catch(async (err)=>{
+        await setError(true);
+        await setPesan(err.response.data.error);
+    })
+}

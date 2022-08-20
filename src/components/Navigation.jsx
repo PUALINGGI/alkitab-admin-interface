@@ -4,7 +4,7 @@ import NavAndroid from "./Navs/Android";
 
 const Navigation = ()=>{
     const [toogle, setToogle] = useState(false);
-    const [activeLink, setActiveLink] = useState(-1);
+    const [activeLink, setActiveLink] = useState(0);
     return (
         <>
             <NavDesktop activeLink={activeLink} setActiveLink={setActiveLink} />

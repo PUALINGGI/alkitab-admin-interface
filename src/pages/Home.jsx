@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MenuIcon, BookOpenIcon, BookmarkIcon, ClipboardListIcon, ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
+import { BookOpenIcon, BookmarkIcon, ClipboardListIcon, ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 // Defenitions Component
 import KitabDefenition from "../components/home-defenitions/kitab-defenition";
 import PerikopDefenition from "../components/home-defenitions/perikop-defenition";
@@ -22,7 +22,6 @@ const Home = (props)=>{
                 <h1 className="font-bold text-3xl">Dokumentasi</h1>
                 <div className="my-5 px-5">
                     <h2 className="font-bold text-2xl mb-5 flex items-center">
-                        <MenuIcon className="h-5 w-5 mr-5" />
                         Menu
                     </h2>
                     <p className="text-semibold text-lg mb-3 sm:px-5">
