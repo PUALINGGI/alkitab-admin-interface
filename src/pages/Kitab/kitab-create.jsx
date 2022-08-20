@@ -77,7 +77,7 @@ function postData(namaKitab, valid, event, setPesan, setError, cb) {
     setError(null);
     event.preventDefault();
     if (valid) {
-        postKitab(setError, setPesan, namaKitab, cb);
+        postKitab(setError, setPesan, namaKitab.toLowerCase(), cb);
     }
 }
 
