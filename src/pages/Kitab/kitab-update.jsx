@@ -87,7 +87,8 @@ function Spinner() {
     )
 }
 function RenderOption({ data }) {
-    if (!data || data.length < 1) return (<option value="" selected disabled>Belum ada kitab</option>);
+    if (!data) return (<option value="" selected disabled>Mengambil data .....</option>);
+    if(data.length<1) return (<option value="" selected disabled>Belum ada kitab</option>);
     return (
         <>
             <option value="" selected disabled>Pilihan</option>
